@@ -5,170 +5,243 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SMART</title>
   <style>
-    
-   .body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: #f4f4f4;
-    color: #333;
-  }
+    @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+    * {
+      box-sizing: border-box;
+    }
   
-  .header {
-    background: #ffffff;
-    color: #3f3e3e;
-    padding: 5px 5px;
-    text-align: center;
-  }
-  .p{
-    background-color: #4334e5;
-    width: 84.4rem;
-    height: 15rem;
-    color: white;
-    padding-top: 10px;
-    font-size: 20px;
-  }
-  .p2{
-    font-size: 11px;
-  }
-  button{
-    background-color: rgb(255, 255, 255);
-        margin-top: 10px;
-        color: rgb(31, 90, 200);
-        border: none;
-        border-radius: 5px;
-        height: 30px;
-  }
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: auto;
-    padding: 10px 0;
-  }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
   
-  .nav a {
-    color: #313131;
-    margin-left: 20px;
-    text-decoration: none;
-    font-weight: bold;
-  }
+    .header {
+      background: #ffffff;
+      color: #3f3e3e;
+      padding: 10px;
+      text-align: center;
+    }
   
-  .nav .btn {
-    background: blue;
-    color: white;
-    padding: 5px 15px;
-    border-radius: 20px;
-  }
+    .p {
+      background-color: #4334e5;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      box-sizing: border-box;
+    }
   
-  .hero h1 {
-    margin: 20px 0 10px;
-  }
+    .p2 {
+      font-size: 14px;
+    }
   
-  .hero p {
-    margin-bottom: 20px;
-  }
+    button {
+      background-color: #fff;
+      margin-top: 10px;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      height: 35px;
+      padding: 0 15px;
+      font-size: 16px;
+      font-weight: 900;
+      cursor: pointer;
+      transition: 0.5s ease;
+    }
   
-  .hero .btn {
-    background: #fff;
-    color: #1C08F5;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  .hero{
-    align-items: center;
-    width: 660px;
-    height: 200px;
-    background-color:rgb(70, 70, 238);
-  }
+    button:hover {
+  transform: scale(1.05);
+      color: #1f5ac8;
+      transition: 0.3s ease;
+    }
   
-  .features {
-    background: #c0c0c0;
-    padding: 40px 20px;
-    text-align: center;
-  }
-  .how-it-works{
-    background: #9d9c9c;
-    padding: 40px 20px;
-    text-align: center;
-  }
-  .testimonials{
-    background: #c0c0c0;
-    padding: 40px 20px;
-    text-align: center;
-  }
-  .features .cards, .steps, .quotes {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-  }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: auto;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
   
-  .card, .step, blockquote {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    flex: 1 1 250px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
+    .nav a {
+      color: #313131;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
   
-  .step small {
-    display: block;
-    margin-top: 10px;
-    color: #666;
-  }
+    .nav .btn {
+      background: blue;
+      color: white;
+      padding: 5px 15px;
+      border-radius: 20px;
+    }
   
-  footer {
-    background: #222;
-    color: #ccc;
-    padding: 40px 20px;
-  }
+    .hero {
+      width: 100%;
+      max-width: 660px;
+      height: auto;
+      margin: 20px auto;
+      background-color: rgb(70, 70, 238);
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
   
-  .footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1100px;
-    margin: auto;
-  }
+    .features, .how-it-works, .testimonials {
+      padding: 40px 20px;
+      text-align: center;
+    }
   
-  .footer-links h4 {
-    margin-bottom: 10px;
-    color: #fff;
-  }
+    .features {
+      background: #c0c0c0;
+    }
   
-  .footer-links ul {
-    list-style: none;
-    padding: 0;
-  }
+    .how-it-works {
+      background: #9d9c9c;
+    }
   
-  .footer-links li a {
-    color: #ccc;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 5px;
-  }
+    .testimonials {
+      background: #c0c0c0;
+    }
   
-  .social-icons a {
-    font-size: 20px;
-    margin-right: 10px;
-    color: #fff;
-    text-decoration: none;
-  }
+    .features .cards, .steps, .quotes {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
   
-  footer p {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
-  }
-  .qw{
-    color: #1C08F5;
-  }
+    .card, .step, blockquote {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1 1 300px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  
+    footer {
+      background: #222;
+      color: #ccc;
+      padding: 40px 20px;
+    }
+  
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: auto;
+    }
+  
+    .footer-links h4 {
+      margin-bottom: 10px;
+      color: #fff;
+    }
+  
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+    }
+  
+    .footer-links li a {
+      color: #ccc;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 5px;
+    }
+  
+    .social-icons a {
+      font-size: 20px;
+      margin-right: 10px;
+      color: #fff;
+      text-decoration: none;
+    }
+  
+    footer p {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  
+    .qw {
+      color: #1C08F5;
+    }
+  
+    /* 🌐 MEDIA QUERIES FOR RESPONSIVENESS */
+    @media (max-width: 768px) {
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+      }
+  
+      .nav a {
+        margin: 10px 0;
+      }
+  
+      .features .cards, .steps, .quotes {
+        flex-direction: column;
+        align-items: center;
+        
+      }
+  
+      .footer-links {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+  
+      .p {
+        font-size: 18px;
+      }
+  
+      .p2 {
+        font-size: 12px;
+      }
+  
+      button {
+        width: 100%;
+        max-width: 200px;
+      }
+  
+      .hero {
+        width: 90%;
+        padding: 15px;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .nav {
+        align-items: center;
+      }
+  
+      .p {
+        font-size: 16px;
+      }
+  
+      .p2 {
+        font-size: 11px;
+      }
+  
+      button {
+        font-size: 14px;
+      }
+  
+      .card, .step, blockquote {
+        flex: 1 1 90%;
+      }
+    }
   </style>
+  
 </head>
 <body>
   <header class="header">
@@ -255,8 +328,11 @@
         <p>smartstreetlighting@gmail.com</p>
       </div>
       <div>
-        <h4>Follow Us</h4>
-        
+          <h4>Follow Us</h4>
+          <a href=""><i class="fa-brands fa-instagram " ></i></a>
+          <a href=""><i class="fa-brands fa-facebook" ></i></a>
+          <a href=""><i class="fa-brands fa-linkedin" ></i></a>
+          <a href=""><i class="fa-brands fa-twitter" ></i></a>
       </div>
     </div>
     <p class="copyright">© Smart Light Monitoring System 2025. All rights reserved.</p>
