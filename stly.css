@@ -1,0 +1,25 @@
+body {
+    background-color: gray;
+    font-family: Arial, sans-serif;
+    color:black;
+}
+.qui {
+    background-color: purple;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 10%;
+}
+.qui:hover {
+    background-color: darkblue;
+    color: white;
+}
+.qui:active {
+    background-color: lightblue;
+    color: black;
+}
+.we{
+background-color: white;
+    border-radius: 40px;
+        }
